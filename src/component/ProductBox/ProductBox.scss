@@ -1,0 +1,43 @@
+.product_card {
+  background: #fff;
+  border-radius: 5px;
+//   flex: 1 1 20rem;
+  width: 17rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  .product_image {
+    height: 13rem;
+    object-fit: cover;
+    width: 100%;
+  }
+  .product_info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    overflow: hidden;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    background-color: var(--primary);
+    
+  }
+  &:hover{
+    .product_info{
+      display: flex;
+    }
+  }
+}
+
+@media(max-width:991px) {
+  .product_card{
+    width: 20rem;
+  }
+ 
+}

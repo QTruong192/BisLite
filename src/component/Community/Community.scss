@@ -1,0 +1,102 @@
+.community {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  .wrap_container{
+    width: 1100px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0;
+    .box_container{
+      width: 500px;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .title_wrapper{
+        display: flex;
+        gap: 10px;
+        font-weight: 600;
+        font-size: 1.2rem;
+        align-items: center;
+        span{
+          color: var(--primary);
+        }
+      }
+      p{
+        font-size: 1.1rem;
+      }
+      .wrap_icon {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        a {
+          font-size: 2rem;
+          display: flex;
+          background-color: rgb(231, 231, 231);
+          color: rgb(0, 0, 0);
+          width: 10rem;
+          height: 6rem;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid rgb(153, 142, 142);
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+      }
+    }
+  }
+  .download_psd {
+    width: 1100px;
+    max-width: 100%;
+    padding: 2rem;
+    background: #e8fcfe;
+    border: 1px solid #81e4ed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem 0;
+    p {
+      width: 700px;
+    }
+    .wrap_btn {
+      span {
+        color: white;
+      }
+      color: black;
+      background: rgb(0, 162, 207);
+      background: linear-gradient(
+        0deg,
+        rgba(0, 162, 207, 1) 0%,
+        rgba(89, 219, 249, 1) 23%
+      );
+      border: 1px solid #00a5b4;
+      border-radius: 5px;
+      padding: 1rem 2rem;
+      display: flex;
+      gap: 10px;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .community{
+    .wrap_container{
+      flex-direction: column;
+      .box_container{
+        .wrap_icon{
+          justify-content: center;
+        }
+      }
+    }
+    .download_psd{
+      flex-direction: column;
+    }
+  }
+}
+
